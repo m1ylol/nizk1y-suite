@@ -637,15 +637,6 @@ body {
         max-width: 90vw;
     }
     
-    .slider-track {
-        width: 500vw;
-    }
-    
-    .slider-image {
-        width: 100vw;
-        max-width: 90vw;
-    }
-    
     .social-overlay {
         width: 90%;
         max-width: 500px;
@@ -738,4 +729,5 @@ body {
     .converter-title {
         font-size: 15px;
     }
+
 }

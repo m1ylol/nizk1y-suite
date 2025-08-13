@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizk1y Сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+</head>
+<body>
+    <div class="background-blur"></div>
+    
+    <main class="container">
+        <section class="photo-section">
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <img src="images/photo1.jpg" class="slider-image">
+                    <img src="images/photo2.jpg" class="slider-image">
+                    <img src="images/photo3.jpg" class="slider-image">
+                    <img src="images/photo4.jpg" class="slider-image">
+                    <img src="images/photo5.jpg" class="slider-image">
+                </div>
+            </div>
+            
+            <div class="social-overlay">
+                <a href="https://www.twitch.tv/nizk1y" class="social-link">
+                    <img src="images/twitch.svg" class="social-icon">
+                </a>
+                <a href="https://t.me/talknizk1y" class="social-link">
+                    <img src="images/telegram.svg" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UC--yyx1oJDZLwZFvPC2G9IQ?guided_help_flow=5" class="social-link">
+                    <img src="images/youtube.svg" class="social-icon">
+                </a>
+                <a href="https://www.donationalerts.com/r/nizk1y" class="social-link">
+                    <img src="images/donalerts.svg" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/nizk1y" class="social-link">
+                    <img src="images/instagram.svg" class="social-icon">
+                </a>
+            </div>
+        </section>
+
+        <section class="title-section">
+            <h1 class="main-title">
+                Расул Nizk1y<br>
+                Бекbass<img src="images/logo.png" class="title-logo">в
+            </h1>
+            <h2 class="subtitle">Стример & Гей мер & Манипулятор</h2>
+            <p class="description">
+                Стример с маленьким сердцем, nizk1m IQ и nizk1m
+                ростом! Что тебе нужно знать о стримах: Я
+                КАЗУАЛ!!! (Только казуал и мирная сложность!)
+                Минимальный поток общения — говорю на тему
+                красивых тёлок без остановки! Стримы
+                каждый день, СЕРЬЁЗНО, каждый день! Не вру! Заходи
+                на огонёк и становись частью нашей приёмной
+                семьи и отцом императора Вади! :)
+            </p>
+        </section>
+
+        <section class="converter-section">
+            <div class="converter-header">
+                <h3 class="converter-title">Сантиметрисы!</h3>
+                <img src="images/sm.png" class="santimetri-header-logo">
+            </div>
+            <p class="converter-subtitle">
+                Уникальная валюта канала, благодаря которой вы можете 
+                приобрести различные бонусы прямо на стриме. Баллы канала 
+                можно заработать смотря стрим, либо задонатив, 
+                ниже предоставлен конвертер рублей в см.<br>1₽ → 30 <img src="images/sm.png" class="santimetri-sm-logo">
+            </p>
+            
+            <div class="converter-form">
+                <div class="input-group">
+                    <label for="rubles">Сумма ₽</label>
+                    <input type="number" id="rubles" placeholder="0">
+                </div>
+                
+                <div class="converter-icon">
+                    <img src="images/converter-logo.svg" id="converterIcon">
+                </div>
+                
+                <div class="input-group">
+                    <label for="centimeters">Сумма <img src="images/sm.png" class="input-logo"></label>
+                    <input type="number" id="centimeters" placeholder="0">
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h3 class="music-title">Гимн стрима</h3>
+            <div class="player-container">
+                <div class="player-wrap">
+                    <button class="btn-play" id="playBtn">
+                        <svg id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </button>
+                    <div class="progress-row">
+                        <div class="time" id="curTime">0:00</div>
+                        <input type="range" class="progress" id="progress" min="0" value="0">
+                        <div class="time" id="durTime">0:00</div>
+                    </div>
+                    <div class="volume">
+                        <button id="muteBtn">🔊</button>
+                        <input type="range" class="volume-slider" id="volume" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+                <audio id="audio" preload="metadata" src="mp3/glubokoe.mp3"></audio>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">© Все права защищены.</p>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

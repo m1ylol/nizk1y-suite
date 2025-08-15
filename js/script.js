@@ -163,7 +163,6 @@ class PhotoSlider {
         this.userInteracted = true;
         this.stopAutoSlide();
         
-        console.log('🔄 Автопрокрутка отключена - пользователь взял управление');
         this.resetAutoSlideTimer();
     }
     
@@ -176,7 +175,6 @@ class PhotoSlider {
             this.autoSlideEnabled = true;
             this.userInteracted = false;
             this.startAutoSlide();
-            console.log('🔄 Автопрокрутка включена - пользователь неактивен');
         }, 10000);
     }
 }
@@ -185,7 +183,6 @@ class CurrencyConverter {
     constructor() {
         this.rublesInput = document.getElementById('rubles');
         this.centimetersInput = document.getElementById('centimeters');
-        this.converterIcon = document.getElementById('converterIcon');
         this.rate = 30;
         
         this.init();
@@ -194,8 +191,6 @@ class CurrencyConverter {
     init() {
         this.rublesInput.addEventListener('input', this.convertFromRubles.bind(this));
         this.centimetersInput.addEventListener('input', this.convertFromCentimeters.bind(this));
-        
-        this.converterIcon.addEventListener('click', this.swapValues.bind(this));
         
         this.rublesInput.addEventListener('keypress', this.validateInput.bind(this));
         this.centimetersInput.addEventListener('keypress', this.validateInput.bind(this));
